@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Recipe | Recipe App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Recipe App</h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="add-recipe.html">Add Recipe</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-section">
+      <h2>Add Your Recipe</h2>
+      <form id="addRecipeForm">
+        <input type="text" placeholder="Recipe Name" id="recipeName" required>
+        <input type="text" placeholder="Area / Region" id="recipeArea" required>
+        <input type="text" placeholder="Category" id="recipeCategory" required>
+        <textarea placeholder="Ingredients (comma-separated)" id="ingredients" required></textarea>
+        <textarea placeholder="Instructions" id="instructions" required></textarea>
+        <input type="url" placeholder="YouTube Tutorial Link" id="youtubeLink">
+        <button type="submit">Add Recipe</button>
+      </form>
+
+      <div id="yourRecipe"></div>
+    </section>
+  </main>
+
+  <script src="add-recipe.js"></script>
+</body>
+</html>
